@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "678d0eecfa9c9673e4203eb4_a8240bdf-f7b1-4a5d-a6c1-ff9d1934ce87",
+  "id": "AI Insert Data_Pecah_Data",
+  "unpublishedCollection": {
+    "name": "Pecah_Data",
+    "pageId": "AI Insert Data",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "currentBabIndex",
+        "value": "0"
+      },
+      {
+        "name": "currentSubbabIndex",
+        "value": "0"
+      }
+    ]
+  }
+}

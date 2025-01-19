@@ -1,0 +1,10 @@
+INSERT INTO public."penjelasan" (
+  "id_subbab", 
+  "jenis_konten", 
+  "konten"
+)
+VALUES (
+  '{{judul_sub.selectedOptionValue}}',    
+  '{{jenis_konten.selectedOptionValue}}',
+  '{{jenis_konten.selectedOptionValue == "media" ? input_media.files[0] : isi_konten.text}}'
+);
