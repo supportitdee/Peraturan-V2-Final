@@ -31,7 +31,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onClick": "{{InputSubab.run().then(() => {\n  showAlert('Data berhasil di input!', 'success');\n}).catch(() => {\n  showAlert('Gagal!', 'error');\n});}}",
+  "onClick": "{{InputSubab.run().then(() => {\n  showAlert('Data berhasil di input!', 'success');\n}).catch(() => {\n  showAlert('Gagal!', 'error');\n});\nclearStore()}}",
   "originalBottomRow": 65,
   "originalTopRow": 61,
   "parentColumnSpace": 12.341796875,
