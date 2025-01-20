@@ -31,7 +31,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onClick": "{{InputSubab.run().then(() => {\n  showAlert('Data berhasil di input!', 'success');\n}).catch(() => {\n  showAlert('Gagal!', 'error');\n});\nresetWidget(\"judul_sub_bab\", true);\nresetWidget(\"isi_sub_bab\", true);}}",
+  "onClick": "{{InputSubab.run().then(() => {\n  showAlert('Data berhasil di input!', 'success');\n}).catch(() => {\n  showAlert('Gagal!', 'error');\n});\nresetWidget(\"judul_sub_bab\", true);\nresetWidget(\"isi_sub_bab\", true);\nNo_subbab.run()}}",
   "originalBottomRow": 65,
   "originalTopRow": 61,
   "parentColumnSpace": 12.341796875,
