@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COALESCE(MAX(\"nomor_bab\")::integer, 0) + 1 AS next_bab\nFROM public.\"bab\"\nWHERE \"id_peraturan\" = '{{carijudul.selectedOptionValue}}';\n",
+      "body": "SELECT COALESCE(\n    (SELECT MAX(nomor_bab::INTEGER) FROM public.\"bab\" WHERE id_peraturan = '{{carijudul.selectedOptionValue}}'),\n    0\n) + 1 AS next_bab;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

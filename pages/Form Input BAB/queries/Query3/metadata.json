@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67811a5458792a13d9b88165_bf1c6e11-122a-472f-be50-25bf902015e7",
-  "id": "Form Input SUBAB_No_subbab",
+  "gitSyncId": "678d2c44fa9c9673e4203f2c_f29ba1e0-ff29-477a-8c29-9c5e53c5f6a8",
+  "id": "Form Input BAB_Query3",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COALESCE(\n    (SELECT MAX(nomor_subbab::INTEGER) FROM public.\"subbab\" WHERE id_bab = '{{cari_babCopy.selectedOptionValue}}'),\n    0\n) + 1 AS next_subbab;\n",
+      "body": "SELECT COALESCE(\n    (SELECT MAX(nomor_bab::INTEGER) FROM public.\"bab\" WHERE id_peraturan = '{{carijudul.selectedOptionValue}}'),\n    0\n) + 1 AS next_bab;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "No_subbab",
-    "pageId": "Form Input SUBAB",
+    "executeOnLoad": false,
+    "name": "Query3",
+    "pageId": "Form Input BAB",
     "userSetOnLoad": false
   }
 }

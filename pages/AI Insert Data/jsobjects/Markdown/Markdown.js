@@ -1,30 +1,38 @@
 export default {
     generateMarkdown() {
         // Mengambil data dari hasil query sebelumnya
-        const judul_peraturan = Olah_Data_AI.query.data.peraturan.judul_peraturan || "Judul Peraturan Tidak Tersedia";
-        const deskripsi = Olah_Data_AI.query.data.peraturan.deskripsi || "Deskripsi Tidak Tersedia";
+        const data = Olah_Data_AI.query.data.peraturan || {};
+        const tabel_peraturan = data.tabel_peraturan || {};
+
+        // Mengambil judul peraturan dan deskripsi
+        const judul_peraturan = tabel_peraturan.judul_peraturan || "Judul Peraturan Tidak Tersedia";
+        const deskripsi = tabel_peraturan.deskripsi || "Deskripsi Tidak Tersedia";
 
         // Membuat header judul peraturan
         let markdown = `Judul Peraturan : ${judul_peraturan}\n\n`;
 
         // Menambahkan deskripsi peraturan
-        markdown += `Deskripsi : ${deskripsi || "Deskripsi Tidak Tersedia"}\n\n`;
+        markdown += `Deskripsi : ${deskripsi}\n\n`;
 
         // Menambahkan bab-bab, jika tersedia
-        const babData = Olah_Data_AI.query.data.bab || [];
+        const babData = Olah_Data_AI.query.data.tabel_bab || [];
         if (babData.length > 0) {
             babData.forEach((item, index) => {
-                const judul_bab = item.judul_bab || `Judul Bab ${index + 1} Tidak Tersedia`;
+                const judul_bab = Olah_Data_AI.query.data.bab || `Judul Bab ${index + 1} Tidak Tersedia`;
                 const isi_bab = item.isi_bab || `Isi Bab ${index + 1} Tidak Tersedia`;
 
                 // Menambahkan judul bab dengan keterangan "Bab X :"
                 markdown += `Bab ${index + 1} : ${judul_bab}\n\n`;
                 markdown += `${isi_bab}\n\n`;
 
+                // Mengambil subbab berdasarkan bab tertentu
+                const subbabData = Olah_Data_AI.query.data.subbab || [];
+                const babId = item.id_bab;  // Misalnya, jika setiap bab memiliki ID yang menghubungkannya ke subbab
+                const babSubbab = subbabData.filter(subbab => subbab.id_bab === babId); // Menyesuaikan dengan ID bab
+
                 // Menambahkan subbab, jika ada
-                const subbabData = item.subbab || [];
-                if (subbabData.length > 0) {
-                    subbabData.forEach((subbab, subIndex) => {
+                if (babSubbab.length > 0) {
+                    babSubbab.forEach((subbab, subIndex) => {
                         const judul_sub_bab = subbab.judul_sub_bab || `Subbab ${subIndex + 1} Tidak Tersedia`;
                         const isi_sub_bab = subbab.isi_sub_bab || `Isi Subbab ${subIndex + 1} Tidak Tersedia`;
 
