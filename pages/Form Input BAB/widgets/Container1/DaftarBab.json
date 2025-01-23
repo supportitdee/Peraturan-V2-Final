@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 53,
+  "bottomRow": 94,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -31,12 +31,14 @@
     }
   },
   "columnOrder": [
+    "id_bab",
     "nomor_bab",
-    "judul_bab",
-    "id_bab"
+    "judul_bab"
   ],
-  "columnUpdatedAt": 1737606304215,
-  "columnWidthMap": {},
+  "columnUpdatedAt": 1737606811815,
+  "columnWidthMap": {
+    "nomor_bab": 132
+  },
   "customIsLoading": false,
   "customIsLoadingValue": "",
   "defaultPageSize": 0,
@@ -56,13 +58,23 @@
       "key": "boxShadow"
     },
     {
+      "key": "tableData"
+    },
+    {
       "key": "primaryColumns.id_bab.computedValue"
     },
+    {
+      "key": "primaryColumns.nomor_bab.computedValue"
+    },
+    {
+      "key": "primaryColumns.judul_bab.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
     {
       "key": "tableData"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
@@ -75,14 +87,14 @@
   "isVisibleFilters": false,
   "isVisiblePagination": false,
   "isVisibleSearch": true,
-  "key": "7369l03qsg",
+  "key": "ux31c41oli",
   "label": "Data",
   "leftColumn": 0,
   "minWidth": 450,
-  "mobileBottomRow": 29,
+  "mobileBottomRow": 31,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 10,
-  "mobileTopRow": 1,
+  "mobileRightColumn": 9,
+  "mobileTopRow": 3,
   "needsErrorInfo": false,
   "parentColumnSpace": 12.341796875,
   "parentId": "6zsgoabmhr",
@@ -92,15 +104,13 @@
       "alias": "id_bab",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id_bab\"]))}}",
+      "computedValue": "{{DaftarBab.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id_bab\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "id_bab",
       "index": 0,
       "isCellEditable": false,
@@ -115,7 +125,6 @@
       "notation": "standard",
       "originalId": "id_bab",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -126,17 +135,15 @@
       "alias": "judul_bab",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "[\"Menggerakkan Organisasi dengan Budaya Flywheel\",\"Rambu-rambu konsep flywheel \",\"Dua Pilar Utama dalam Menggerakkan Flywheel\",\"Manfaatkan Momentum\",\"Inovasi\"]",
+      "computedValue": "{{DaftarBab.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"judul_bab\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "judul_bab",
-      "index": 1,
+      "index": 2,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -149,7 +156,6 @@
       "notation": "standard",
       "originalId": "judul_bab",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -160,17 +166,15 @@
       "alias": "nomor_bab",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "[\"1\",\"2\",\"3\",\"4\",\"5\"]",
+      "computedValue": "{{DaftarBab.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nomor_bab\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "nomor_bab",
-      "index": 0,
+      "index": 1,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -179,11 +183,10 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "No Bab",
+      "label": "Nomor Bab",
       "notation": "standard",
       "originalId": "nomor_bab",
       "sticky": "",
-      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -197,11 +200,11 @@
   "searchKey": "",
   "tableData": "{{SelectDaftarBab.data}}",
   "textSize": "0.875rem",
-  "topRow": 1,
+  "topRow": 0,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "voj3b57ew6",
-  "widgetName": "Table1"
+  "widgetId": "b4krg1c92a",
+  "widgetName": "DaftarBab"
 }
