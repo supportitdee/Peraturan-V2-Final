@@ -1,7 +1,8 @@
 SELECT 
 		"id_subbab",
     "nomor_subbab", 
-    "judul_subbab"
+    "judul_subbab",
+		"isi_subbab"
 FROM public."subbab"
 WHERE "id_bab" = '{{cari_babCopy.selectedOptionValue}}'
 ORDER BY "nomor_subbab" ASC;

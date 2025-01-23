@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 98,
+  "bottomRow": 67,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -33,9 +33,10 @@
   "columnOrder": [
     "id_subbab",
     "nomor_subbab",
-    "judul_subbab"
+    "judul_subbab",
+    "isi_subbab"
   ],
-  "columnUpdatedAt": 1737607435078,
+  "columnUpdatedAt": 1737608555634,
   "columnWidthMap": {},
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -66,6 +67,9 @@
     },
     {
       "key": "primaryColumns.judul_subbab.computedValue"
+    },
+    {
+      "key": "primaryColumns.isi_subbab.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -73,7 +77,11 @@
       "key": "tableData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
@@ -89,11 +97,12 @@
   "label": "Data",
   "leftColumn": 0,
   "minWidth": 450,
-  "mobileBottomRow": 28,
+  "mobileBottomRow": 30,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 9,
-  "mobileTopRow": 0,
+  "mobileRightColumn": 7,
+  "mobileTopRow": 2,
   "needsErrorInfo": false,
+  "onRowSelected": "{{showModal(Show_Isi_Subbab.name);}}",
   "parentColumnSpace": 12.341796875,
   "parentId": "i47696hwgd",
   "parentRowSpace": 10,
@@ -122,6 +131,37 @@
       "label": "id_subbab",
       "notation": "standard",
       "originalId": "id_subbab",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "isi_subbab": {
+      "alias": "isi_subbab",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "columnType": "html",
+      "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isi_subbab\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "isi_subbab",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "isi_subbab",
+      "notation": "standard",
+      "originalId": "isi_subbab",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
@@ -203,6 +243,6 @@
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "f8gr7r4apm",
+  "widgetId": "k3z9nlkjnw",
   "widgetName": "Table1"
 }
