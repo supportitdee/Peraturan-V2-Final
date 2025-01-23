@@ -33,9 +33,10 @@
   "columnOrder": [
     "id_bab",
     "nomor_bab",
-    "judul_bab"
+    "judul_bab",
+    "isi_bab"
   ],
-  "columnUpdatedAt": 1737606811815,
+  "columnUpdatedAt": 1737608885540,
   "columnWidthMap": {
     "nomor_bab": 132
   },
@@ -49,6 +50,9 @@
   "delimiter": ",",
   "dynamicBindingPathList": [
     {
+      "key": "tableData"
+    },
+    {
       "key": "accentColor"
     },
     {
@@ -56,18 +60,6 @@
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "tableData"
-    },
-    {
-      "key": "primaryColumns.id_bab.computedValue"
-    },
-    {
-      "key": "primaryColumns.nomor_bab.computedValue"
-    },
-    {
-      "key": "primaryColumns.judul_bab.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -75,7 +67,11 @@
       "key": "tableData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "horizontalAlignment": "LEFT",
@@ -96,6 +92,7 @@
   "mobileRightColumn": 9,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
+  "onRowSelected": "{{showModal(Show_Isi_Bab.name);}}",
   "parentColumnSpace": 12.341796875,
   "parentId": "6zsgoabmhr",
   "parentRowSpace": 10,
@@ -104,12 +101,14 @@
       "alias": "id_bab",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{DaftarBab.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id_bab\"]))}}",
+      "computedValue": "[34,35,36,37]",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "id_bab",
       "index": 0,
@@ -125,6 +124,41 @@
       "notation": "standard",
       "originalId": "id_bab",
       "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "isi_bab": {
+      "alias": "isi_bab",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "[\"<p dir=\\\"ltr\\\">Konsisten memposisikan diri sebagai perusahaan inovatif religius untuk mencerdaskan, membahagiakan, dan memuliakan umat manusia.</p>\",\"<ol>\\n<li dir=\\\"ltr\\\" aria-level=\\\"1\\\">\\n<p dir=\\\"ltr\\\" role=\\\"presentation\\\">Membantu kaum akademisi dalam proses implementasi Tri Dharma Perguruan Tinggi di bidang pengadaan, penerbitan, dan percetakan.</p>\\n</li>\\n<li dir=\\\"ltr\\\" aria-level=\\\"1\\\">\\n<p dir=\\\"ltr\\\" role=\\\"presentation\\\">Menyediakan sarana prasarana serta buku-buku pendidikan berkualitas yang dibutuhkan masyarakat.</p>\\n</li>\\n<li dir=\\\"ltr\\\" aria-level=\\\"1\\\">\\n<p dir=\\\"ltr\\\" role=\\\"presentation\\\">Menciptakan lapangan kerja bagi profesional berketerampilan, berakhlakul karimah, mendahulukan kepentingan bersama, dan berjiwa kesatria.</p>\\n</li>\\n<li dir=\\\"ltr\\\" aria-level=\\\"1\\\">\\n<p dir=\\\"ltr\\\" role=\\\"presentation\\\">Memanfaatkan secara optimal segala fasilitas, dukungan, dan jaringan yang dimiliki pemerintah, yayasan, lembaga, perseorangan, maupun swasta secara jujur, transparan, dan akuntabel untuk mewujudkan tujuan mulia yang telah disepakati. &nbsp;</p>\\n</li>\\n</ol>\\n<p>&nbsp;</p>\",\"<p dir=\\\"ltr\\\" role=\\\"presentation\\\">1. Menyediakan buku pegangan kuliah untuk seluruh mahasiswa Indonesia.</p>\\n<p dir=\\\"ltr\\\" role=\\\"presentation\\\">2. Menerbitkan buku serta mendokumentasikan ilmu dan pengalaman seluruh dosen Indonesia.</p>\\n<p dir=\\\"ltr\\\" role=\\\"presentation\\\">3. Membuat perusahaan baru dari kekayaan intelektual, teknologi, budaya, dan alam Indonesia.</p>\\n<p dir=\\\"ltr\\\" role=\\\"presentation\\\">4. Mensejahterakan Stakeholder dan Shareholder secara kreatif, adil, dan proporsional.</p>\",\"<p>Seluruh perusahaan di bawah manajemen Deepublish Group seperti: (1) Penerbit Deepublish, (2) Penerbit Bukunesia, (3) Diera Beauty Care, (4) Obat Herbal Nano Autoimun Care, memiliki budaya yang sama. Budaya perusahaan kita berisi 6 (enam) nilai-nilai keislaman yang terdiri dari 3 (tiga) Prinsip Kerjasama, 6 (enam) Akhlak Luhur, terhindar dari 7 (tujuh) Transaksi Haram, melaksanakan 4 (empat) Roda Berputar, serta menjiwai 4 (empat) Tali Keimanan.</p>\"]",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "isi_bab",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "isi_bab",
+      "notation": "standard",
+      "originalId": "isi_bab",
+      "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -135,12 +169,14 @@
       "alias": "judul_bab",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{DaftarBab.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"judul_bab\"]))}}",
+      "computedValue": "[\"Visi\",\"Misi\",\"Tujuan\",\"Budaya Deepublish Group\"]",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "LEFT",
       "id": "judul_bab",
       "index": 2,
@@ -156,6 +192,7 @@
       "notation": "standard",
       "originalId": "judul_bab",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -166,12 +203,14 @@
       "alias": "nomor_bab",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{DaftarBab.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nomor_bab\"]))}}",
+      "computedValue": "[\"1\",\"2\",\"3\",\"4\"]",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "nomor_bab",
       "index": 1,
@@ -187,6 +226,7 @@
       "notation": "standard",
       "originalId": "nomor_bab",
       "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
