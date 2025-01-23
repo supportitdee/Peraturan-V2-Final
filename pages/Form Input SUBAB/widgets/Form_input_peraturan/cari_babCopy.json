@@ -28,6 +28,9 @@
     },
     {
       "key": "onDropdownOpen"
+    },
+    {
+      "key": "onDropdownClose"
     }
   ],
   "isDisabled": false,
@@ -50,7 +53,8 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "onDropdownOpen": "{{Select_Subbab.run()}}",
+  "onDropdownClose": "{{Select_Subbab.run()}}",
+  "onDropdownOpen": "",
   "onOptionChange": "{{No_subbab.run()}}",
   "optionLabel": "judul_bab",
   "optionValue": "id_bab",

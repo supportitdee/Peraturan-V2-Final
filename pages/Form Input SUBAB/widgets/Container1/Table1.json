@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 95,
+  "bottomRow": 98,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -35,7 +35,7 @@
     "nomor_subbab",
     "judul_subbab"
   ],
-  "columnUpdatedAt": 1737607184759,
+  "columnUpdatedAt": 1737607435078,
   "columnWidthMap": {},
   "customIsLoading": false,
   "customIsLoadingValue": "",
@@ -203,6 +203,6 @@
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
-  "widgetId": "f1mp3lytfo",
+  "widgetId": "f8gr7r4apm",
   "widgetName": "Table1"
 }
