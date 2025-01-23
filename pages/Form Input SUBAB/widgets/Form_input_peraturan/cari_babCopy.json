@@ -25,6 +25,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownOpen"
     }
   ],
   "isDisabled": false,
@@ -47,6 +50,7 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
+  "onDropdownOpen": "{{Select_Subbab.run()}}",
   "onOptionChange": "{{No_subbab.run()}}",
   "optionLabel": "judul_bab",
   "optionValue": "id_bab",
