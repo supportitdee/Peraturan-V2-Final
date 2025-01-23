@@ -1,4 +1,0 @@
-SELECT COALESCE(
-    (SELECT MAX(nomor_bab::INTEGER) FROM public."bab" WHERE id_peraturan = '{{carijudul.selectedOptionValue}}'),
-    0
-) + 1 AS next_bab;

@@ -25,6 +25,9 @@
     },
     {
       "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownClose"
     }
   ],
   "isDisabled": false,
@@ -47,8 +50,9 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
+  "onDropdownClose": "{{SelectDaftarBab.run()}}",
   "onDropdownOpen": "{{SelectJudulPeraturan.run()}}",
-  "onOptionChange": "{{No_Bab.run();\nTampilkan_daftar_bab.run()}}",
+  "onOptionChange": "{{No_Bab.run();}}",
   "optionLabel": "judul_peraturan",
   "optionValue": "id_peraturan",
   "originalBottomRow": 13,
