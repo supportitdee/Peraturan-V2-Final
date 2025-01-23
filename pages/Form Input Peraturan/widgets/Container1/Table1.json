@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 28,
+  "bottomRow": 92,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -112,7 +112,7 @@
   "isVisible": true,
   "isVisibleDownload": false,
   "isVisibleFilters": false,
-  "isVisiblePagination": true,
+  "isVisiblePagination": false,
   "isVisibleSearch": true,
   "key": "2qho8p340q",
   "label": "Data",
@@ -160,7 +160,7 @@
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
-      "verticalAlignment": "CENTER",
+      "verticalAlignment": "TOP",
       "width": 150
     },
     "deskripsi": {
@@ -191,7 +191,7 @@
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
-      "verticalAlignment": "CENTER",
+      "verticalAlignment": "TOP",
       "width": 150
     },
     "id_peraturan": {
@@ -227,7 +227,7 @@
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
-      "verticalAlignment": "CENTER",
+      "verticalAlignment": "TOP",
       "width": 150
     },
     "judul_peraturan": {
@@ -258,7 +258,7 @@
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
-      "verticalAlignment": "CENTER",
+      "verticalAlignment": "TOP",
       "width": 150
     },
     "status": {
@@ -289,7 +289,7 @@
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
-      "verticalAlignment": "CENTER",
+      "verticalAlignment": "TOP",
       "width": 150
     },
     "tanggal_diterbitkan": {
@@ -320,7 +320,7 @@
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
-      "verticalAlignment": "CENTER",
+      "verticalAlignment": "TOP",
       "width": 150
     },
     "version": {
@@ -351,7 +351,7 @@
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
-      "verticalAlignment": "CENTER",
+      "verticalAlignment": "TOP",
       "width": 150
     }
   },
@@ -359,13 +359,14 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
+  "serverSidePaginationEnabled": false,
   "tableData": "{{ShowPeraturan.data}}",
   "textSize": "0.875rem",
   "topRow": 0,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
-  "verticalAlignment": "CENTER",
+  "verticalAlignment": "TOP",
   "widgetId": "wjb1bn7w2d",
   "widgetName": "Table1"
 }
