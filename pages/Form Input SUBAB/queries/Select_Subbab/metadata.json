@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67811a5458792a13d9b88165_24b26883-4311-4dc4-a964-6d3e949df99d",
-  "id": "Form Input SUBAB_CariBab",
+  "gitSyncId": "678d2c44fa9c9673e4203f2c_b4ee21e0-7cae-42ac-acc5-3587b39d961b",
+  "id": "Form Input SUBAB_Select_Subbab",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \"id_bab\" AS \"code\", \"judul_bab\" AS \"name\"\nFROM public.\"bab\"\nWHERE \"judul_bab\" ILIKE '%' || '{{carijudul.filterText || \"\"}}' || '%'\nORDER BY \"judul_bab\";\n",
+      "body": "SELECT \n\t\t\"id_subbab\",\n    \"nomor_subbab\", \n    \"judul_subbab\"\nFROM public.\"subbab\"\nWHERE \"id_bab\" = '{{cari_babCopy.selectedOptionValue}}'\nORDER BY \"nomor_subbab\" ASC;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "CariBab",
+    "executeOnLoad": true,
+    "name": "Select_Subbab",
     "pageId": "Form Input SUBAB",
     "userSetOnLoad": false
   }
