@@ -1,8 +1,8 @@
 SELECT 
-		"id_subbab",
+    "id_subbab",
     "nomor_subbab", 
     "judul_subbab",
-		"isi_subbab"
+    "isi_subbab"
 FROM public."subbab"
 WHERE "id_bab" = '{{cari_babCopy.selectedOptionValue}}'
-ORDER BY "nomor_subbab" ASC;
+ORDER BY LENGTH("nomor_subbab"), "nomor_subbab" ASC;

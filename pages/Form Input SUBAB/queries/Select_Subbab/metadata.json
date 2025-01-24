@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n\t\t\"id_subbab\",\n    \"nomor_subbab\", \n    \"judul_subbab\",\n\t\t\"isi_subbab\"\nFROM public.\"subbab\"\nWHERE \"id_bab\" = '{{cari_babCopy.selectedOptionValue}}'\nORDER BY \"nomor_subbab\" ASC;\n",
+      "body": "SELECT \n    \"id_subbab\",\n    \"nomor_subbab\", \n    \"judul_subbab\",\n    \"isi_subbab\"\nFROM public.\"subbab\"\nWHERE \"id_bab\" = '{{cari_babCopy.selectedOptionValue}}'\nORDER BY LENGTH(\"nomor_subbab\"), \"nomor_subbab\" ASC;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

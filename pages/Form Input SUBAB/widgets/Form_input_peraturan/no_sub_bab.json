@@ -8,13 +8,13 @@
   "defaultText": "{{No_subbab.data[0].next_subbab.toString()}}",
   "dynamicBindingPathList": [
     {
+      "key": "defaultText"
+    },
+    {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
