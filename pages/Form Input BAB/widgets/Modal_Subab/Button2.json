@@ -32,7 +32,7 @@
   "mobileRightColumn": 47,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{closeModal(Modal_Subab.name);\nnavigateTo('Home', {}, 'SAME_WINDOW');}}",
+  "onClick": "{{closeModal(Modal_Subab.name);\nnavigateTo('Form Input BAB', {}, 'SAME_WINDOW');}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "kbk69gwtm6",

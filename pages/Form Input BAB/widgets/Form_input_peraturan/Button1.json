@@ -31,7 +31,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onClick": "{{InputBab.run().then(() => {\n  showAlert('Input Berhasil', 'success');\n}).catch(() => {\n  showAlert('Gagal Input', 'error');\n});\nshowModal(Modal_Subab.name);}}",
+  "onClick": "{{InputBab.run().then(() => {\n  showAlert('Input Berhasil', 'success');\n}).catch(() => {\n  showAlert('Gagal Input', 'error');\n});\nshowModal(Modal_Subab.name);\nresetWidget(\"judul_bab\", true);\nresetWidget(\"isi_bab\", true);}}",
   "originalBottomRow": 62,
   "originalTopRow": 58,
   "parentColumnSpace": 12.341796875,
